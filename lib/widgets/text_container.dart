@@ -15,6 +15,7 @@ class TextContainer extends StatelessWidget {
         fontSize: 25,
         fontWeight: FontWeight.w300,
         color: Colors.white,
+        fontFamily: 'Ubuntu',
       ),
     );
   }

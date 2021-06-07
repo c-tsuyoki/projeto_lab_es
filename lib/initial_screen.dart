@@ -23,7 +23,7 @@ class InitialScreen extends StatelessWidget {
             child: Row(
               children: [
                 HomeLogo(
-                  imagePath: "imagens/teste.png",
+                  imagePath: "imagens/initial_logo.png",
                 ),
               ],
             ),
@@ -32,10 +32,10 @@ class InitialScreen extends StatelessWidget {
             child: Column(
               children: <Widget>[
                 SizedBox(height: 200),
-                MyText("Bem vindo ao Estuda Dev"),
+                MyText("Bem vindo ao Estuda Dev!!!"),
                 MyText(
-                    "Estude as ferramentas e os conceitos para ser um desenvolvedor"),
-                SizedBox(height: 250),
+                    "Estude as ferramentas e os conceitos para ser um desenvolvedor."),
+                SizedBox(height: 230),
               ],
             ),
           ),

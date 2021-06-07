@@ -12,7 +12,11 @@ class MenuImage extends StatefulWidget {
 class _MenuImageState extends State<MenuImage> {
   @override
   Widget build(BuildContext context) {
-    return Image.asset(widget.imagePath,
-        filterQuality: FilterQuality.high, fit: BoxFit.none, scale: 3);
+    return Image.asset(
+      widget.imagePath,
+      filterQuality: FilterQuality.high,
+      fit: BoxFit.none,
+      scale: 3,
+    );
   }
 }

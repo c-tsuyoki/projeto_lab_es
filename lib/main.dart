@@ -37,9 +37,10 @@ Widget _splashScreen() {
   return Stack(
     children: <Widget>[
       SplashScreen(
-        seconds: 5,
+        seconds: 2,
         navigateAfterSeconds: InitialScreen(),
         backgroundColor: Color.fromRGBO(0, 174, 255, 1),
+        loaderColor: Colors.black,
       ),
       Row(
         mainAxisAlignment: MainAxisAlignment.center,
