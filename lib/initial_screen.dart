@@ -2,7 +2,6 @@ import 'package:flutter/material.dart';
 import 'widgets/home_logo.dart';
 import 'main_menu.dart';
 import 'widgets/text.dart';
-
 import 'widgets/text_container.dart';
 
 class InitialScreen extends StatelessWidget {

@@ -65,10 +65,6 @@ flutter:
   # list giving the asset and other descriptors for the font. For
   # example:
   fonts:
-    - family: Odibee Sans
-      fonts:
-        - asset: assets/fonts/OdibeeSans-Regular.ttf
-          weight: 300
     - family: Ubuntu
       fonts:
         - asset: assets/fonts/Ubuntu-Regular.ttf

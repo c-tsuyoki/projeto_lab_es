@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'widgets/text_title.dart';
 import 'category_screens/fs_screen.dart';
 import 'category_screens/fw_screen.dart';
 import 'category_screens/cg_screen.dart';
@@ -12,7 +13,7 @@ class MainMenu extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
         appBar: AppBar(
-          title: Text("Categorias"),
+          title: TextTitle("Categorias"),
           backgroundColor: Colors.blue[900],
         ),
         backgroundColor: Color.fromRGBO(0, 174, 255, 1),
