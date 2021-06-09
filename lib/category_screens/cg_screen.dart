@@ -1,7 +1,8 @@
 import 'package:flutter/material.dart';
-import 'package:projeto_lab_es/cg_screens/back_screen.dart';
-import 'package:projeto_lab_es/cg_screens/front_screen.dart';
-import 'package:projeto_lab_es/text.dart';
+import '../cg_screens/back_screen.dart';
+import '../cg_screens/front_screen.dart';
+import '../widgets/text.dart';
+import '../widgets/text_title.dart';
 import '../widgets/menu_image.dart';
 import '../widgets/text_container.dart';
 
@@ -10,88 +11,108 @@ class CgScreen extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text("Conceitos Gerais"),
+        title: TextTitle("Conceitos Gerais"),
         backgroundColor: Colors.blue[900],
       ),
       backgroundColor: Color.fromRGBO(0, 174, 255, 1),
-      body: _fbScreen(context),
+      body: _cgScreen(context),
     );
   }
 
-  _fbScreen(BuildContext context) {
+  _cgScreen(BuildContext context) {
     return Container(
       child: Column(
+        mainAxisAlignment: MainAxisAlignment.spaceAround,
+        crossAxisAlignment: CrossAxisAlignment.start,
         children: [
-          SizedBox(height: 20),
-          MenuImage(
-            imagePath: "imagens/cat_cg.png",
-          ),
-          SizedBox(height: 120),
-          MyText(
-              "É importante entender estes conceitos para avançar na carreira"),
-          SizedBox(height: 115),
-          Container(
-            height: 60,
-            width: 380,
-            margin: const EdgeInsets.symmetric(horizontal: 5),
-            decoration: BoxDecoration(
-                borderRadius: BorderRadius.circular(30),
-                color: Colors.blue[900]),
-            child: Padding(
-              padding: const EdgeInsets.symmetric(horizontal: 5),
-              child: Row(
-                children: [
-                  Spacer(),
-                  TextContainer("Back-End"),
-                  Spacer(),
-                  IconButton(
-                      icon: Icon(
-                        Icons.arrow_forward_outlined,
-                        color: Colors.white,
-                        size: 30,
-                      ),
-                      onPressed: () {
-                        Navigator.push(
-                          context,
-                          MaterialPageRoute(
-                              builder: (BuildContext context) => BackScreen()),
-                        );
-                      }),
-                ],
+          Row(
+            mainAxisAlignment: MainAxisAlignment.center,
+            crossAxisAlignment: CrossAxisAlignment.start,
+            children: [
+              MenuImage(
+                imagePath: "imagens/cat_cg.png",
               ),
+            ],
+          ),
+          SizedBox(height: 15),
+          Center(
+            child: Padding(
+              padding: EdgeInsets.all(15),
+              child: MyText(
+                  "É fundamental entender alguns conceitos para melhorar e avançar na carreira."),
             ),
           ),
-          SizedBox(height: 20),
-          Container(
-            height: 60,
-            width: 380,
-            margin: const EdgeInsets.symmetric(horizontal: 5),
-            decoration: BoxDecoration(
-                borderRadius: BorderRadius.circular(30),
-                color: Colors.blue[900]),
-            child: Padding(
-              padding: const EdgeInsets.symmetric(horizontal: 5),
-              child: Row(
-                children: [
-                  Spacer(),
-                  TextContainer("Front-End"),
-                  Spacer(),
-                  IconButton(
-                      icon: Icon(
-                        Icons.arrow_forward_outlined,
-                        color: Colors.white,
-                        size: 30,
-                      ),
-                      onPressed: () {
-                        Navigator.push(
-                          context,
-                          MaterialPageRoute(
-                              builder: (BuildContext context) => FrontScreen()),
-                        );
-                      }),
-                ],
+          SizedBox(height: 50),
+          Column(
+            mainAxisAlignment: MainAxisAlignment.center,
+            crossAxisAlignment: CrossAxisAlignment.end,
+            children: [
+              Container(
+                height: 60,
+                width: 380,
+                margin: const EdgeInsets.symmetric(horizontal: 5),
+                decoration: BoxDecoration(
+                    borderRadius: BorderRadius.circular(30),
+                    color: Colors.blue[900]),
+                child: Padding(
+                  padding: const EdgeInsets.symmetric(horizontal: 5),
+                  child: Row(
+                    children: [
+                      Spacer(),
+                      TextContainer("Back-End"),
+                      Spacer(),
+                      IconButton(
+                          icon: Icon(
+                            Icons.arrow_forward_outlined,
+                            color: Colors.white,
+                            size: 30,
+                          ),
+                          onPressed: () {
+                            Navigator.push(
+                              context,
+                              MaterialPageRoute(
+                                  builder: (BuildContext context) =>
+                                      BackScreen()),
+                            );
+                          }),
+                    ],
+                  ),
+                ),
               ),
-            ),
+              SizedBox(height: 20),
+              Container(
+                height: 60,
+                width: 380,
+                margin: const EdgeInsets.symmetric(horizontal: 5),
+                decoration: BoxDecoration(
+                    borderRadius: BorderRadius.circular(30),
+                    color: Colors.blue[900]),
+                child: Padding(
+                  padding: const EdgeInsets.symmetric(horizontal: 5),
+                  child: Row(
+                    children: [
+                      Spacer(),
+                      TextContainer("Front-End"),
+                      Spacer(),
+                      IconButton(
+                          icon: Icon(
+                            Icons.arrow_forward_outlined,
+                            color: Colors.white,
+                            size: 30,
+                          ),
+                          onPressed: () {
+                            Navigator.push(
+                              context,
+                              MaterialPageRoute(
+                                  builder: (BuildContext context) =>
+                                      FrontScreen()),
+                            );
+                          }),
+                    ],
+                  ),
+                ),
+              ),
+            ],
           ),
         ],
       ),

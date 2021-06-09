@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:projeto_lab_es/text.dart';
+import '../widgets/text.dart';
 import '../widgets/button.dart';
 import '../widgets/text_title.dart';
 import '../main_menu.dart';
@@ -47,7 +47,10 @@ class PooScreen extends StatelessWidget {
                     MyText(
                         "A POO(Programação Orientada a Objetos) diz respeito a um padrão de programação muito famoso pelo reaproveitamento de código e pela segurança."),
                     MyText(
-                        "Este padrão utiliza o conceito de representação de objetos da vida real para compor seus algoritmos e possuí 4 pilares fundamentais: Abstração, Encapsulamento, Herança e Polimorfismo.")
+                        "Este padrão utiliza o conceito de representação de objetos da vida real para compor seus algoritmos e possuí 4 pilares fundamentais: Abstração, Encapsulamento, Herança e Polimorfismo."),
+                    MyText(" "),
+                    MyText(
+                        "Algumas linguagens orientadas a objetos: Java, C#, Dart.")
                   ],
                 ),
               ),

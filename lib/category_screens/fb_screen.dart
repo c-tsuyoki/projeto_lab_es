@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:projeto_lab_es/fb_screens/logic_screen.dart';
-import 'package:projeto_lab_es/fb_screens/poo_screen.dart';
-import 'package:projeto_lab_es/text.dart';
+import '../fb_screens/logic_screen.dart';
+import '../fb_screens/poo_screen.dart';
+import '../widgets/text.dart';
 import '../widgets/text_title.dart';
 import '../widgets/menu_image.dart';
 import '../widgets/text_container.dart';

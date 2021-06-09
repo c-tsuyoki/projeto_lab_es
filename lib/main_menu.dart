@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:projeto_lab_es/category_screens/fs_screen.dart';
-import 'package:projeto_lab_es/category_screens/fw_screen.dart';
+import 'category_screens/fs_screen.dart';
+import 'category_screens/fw_screen.dart';
 import 'category_screens/cg_screen.dart';
 import 'category_screens/fb_screen.dart';
 import 'category_screens/lp_screen.dart';

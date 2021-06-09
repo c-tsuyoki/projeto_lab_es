@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'widgets/home_logo.dart';
 import 'main_menu.dart';
-import 'text.dart';
+import 'widgets/text.dart';
 
 import 'widgets/text_container.dart';
 
@@ -34,8 +34,8 @@ class InitialScreen extends StatelessWidget {
                 SizedBox(height: 200),
                 MyText("Bem vindo ao Estuda Dev!!!"),
                 MyText(
-                    "Estude as ferramentas e os conceitos para ser um desenvolvedor."),
-                SizedBox(height: 230),
+                    "Conheça as principais tecnologias, ferramentas e conceitos para se tornar um desenvolvedor."),
+                SizedBox(height: 200),
               ],
             ),
           ),

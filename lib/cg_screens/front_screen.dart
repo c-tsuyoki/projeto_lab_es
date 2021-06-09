@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:projeto_lab_es/text.dart';
+import '../widgets/text.dart';
 import '../widgets/button.dart';
 import '../main_menu.dart';
 import '../widgets/text_title.dart';
@@ -38,7 +38,7 @@ class FrontScreen extends StatelessWidget {
             MenuImage(
               imagePath: "imagens/front.png",
             ),
-            SizedBox(height: 60),
+            SizedBox(height: 20),
             Center(
               child: Padding(
                 padding: EdgeInsets.all(15),

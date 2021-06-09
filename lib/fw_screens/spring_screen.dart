@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:projeto_lab_es/text.dart';
-import 'package:projeto_lab_es/widgets/button.dart';
+import '../widgets/text.dart';
+import '../widgets/button.dart';
 import '../widgets/text_title.dart';
 import '../main_menu.dart';
 import '../widgets/menu_image.dart';
