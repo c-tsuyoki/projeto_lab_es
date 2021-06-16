@@ -37,7 +37,7 @@ Widget _splashScreen() {
   return Stack(
     children: <Widget>[
       SplashScreen(
-        seconds: 2,
+        seconds: 5,
         navigateAfterSeconds: InitialScreen(),
         backgroundColor: Color.fromRGBO(0, 174, 255, 1),
         loaderColor: Colors.black,
